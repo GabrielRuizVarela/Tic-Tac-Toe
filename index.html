@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script3.js" defer></script>
     <!-- Normalize -->
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" /> 
     <title>Tic Tac Toe</title>
@@ -15,30 +15,26 @@
         <h1>Tic Tac Toe</h1>
     </header>
     <div class="main-container">
-        <div class="select">
-            <div class="markers">
-                <button id="x">X</button>
-                <button id="o">O</button>
-            </div>
             <div class="score">
                 <div class="p1"></div>
                 <div class="p2"></div>
             </div>
-        </div>
-        <div class="grid-container">
-            <!-- <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div> -->
-        </div>
+            <div class="grid-container"></div>
+            <button id="reset">reset</button>
+                <!-- <button id="o">O</button> -->
     </div>
-    <footer>
-
-    </footer>
+    <footer>By Gabriel Ruiz Varela</footer>
+    <div class="welcome active">
+        <label for="player1">Player 1:</label>
+        <input type="text" name="" id="player1" placeholder="Name">
+        <label for="player2">Player 2:</label>
+        <input type="text" name="" id="player2" placeholder="Name">
+        <button id="play">Play</button>
+    </div>
+    <div class="opacity active"></div>
+    <div class="win-screen">
+        <h1></h1>
+        <button id="next-round">Next Round</button>
+    </div>
 </body>
 </html>
